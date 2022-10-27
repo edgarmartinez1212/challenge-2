@@ -1,31 +1,160 @@
-/* reset */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex; */
-    /* flex-direction: column; */
     height: 100vh;
-    width: 85vw;
-    margin: auto;
-    border: 1px solid black;
 }
 
+/* header start */
 header {
     border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* background-image: url('https://www.psdgraphics.com/wp-content/uploads/2021/01/blue-paint-splatter-png-768x532.png');
+    background-size: cover;
+    background-position: 50%; */
 }
+header a {text-decoration: none;}
+
+/* header h1 */
 header h1 {
-    font-size: 2rem;
-    /* border: 1px solid green; */
+    /* border: 1px solid red; */
 }
-header nav {}
-header a {
-    text-decoration: none;
+header h1 a {
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    /* font-size: 3rem; */
+    font-size: 4vw;
+
+    color: black;
+}
+header h1 a div {
+    /* padding: 6px; */
+    /* justify-content: space-between; */
 }
 
+/* header nav */
+header nav {
+    /* border: 1px solid green; */
+    /* display: block; */
+    padding: 0;
+    margin: 0;
+
+
+    display: flex;
+    /*justify-content: space-between;
+    align-items: center; */
+    
+}
+header nav ul li {
+    list-style: none;
+    display: inline;
+    /* display: inline-block; */
+    /* border */
+}
+/* header end */
+@media screen and (min-width: 600px) {
+    .mrgn-rgt-10 { margin-right: 10px; }
+    header h1, header nav {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    header, nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header span {
+        display: none;
+    }
+    h1, nav {
+        /* border: 1px solid blue; */
+    }
+    header h1 a{
+        /* border: 1px solid black; */
+        flex-direction: column;
+    }
+    h1 a div {
+        /* font-size: 4rem; */
+        /* border: 1px solid black; */
+    }
+    header h1 {
+        margin: 0;
+    }
+    header h1 a div, nav a {
+        padding: 0;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 379px) {
+    header, .fx {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header span {
+        display: none;
+    }
+    h1, nav {
+        /* border: 1px solid blue; */
+    }
+    header h1 a{
+        /* border: 1px solid black; */
+        flex-direction: column;
+    }
+    h1 a div {
+        font-size: 1.5rem;
+        /* border: 1px solid black; */
+    }
+    header h1 {
+        margin: 0;
+    }
+    header h1 a div, nav a {
+        padding: 0;
+    }
+    nav a {
+        /* font-size: 1rem; */
+    }
+}
+
+
+
+
+
+
+
+
+
 main {}
+section {}
+
+.about {}
+
+.work {
+    /* border: 1px solid pink; */
+}
+.projects-container{
+    /* border: 1px solid red; */
+}
+.flex-box {
+    /* display: flex; */
+}
+.projects {
+    /* background-color: gray; */
+    /* border: 1px solid black; */
+    /* height: 100px; */
+    /* width: 200px; */
+}
+.contact {}
 
 footer {}
