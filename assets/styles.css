@@ -57,6 +57,7 @@ header nav ul li {
     /* border */
 }
 /* header end */
+
 @media screen and (min-width: 600px) {
     .mrgn-rgt-10 { margin-right: 10px; }
     header h1, header nav {
@@ -127,20 +128,18 @@ header nav ul li {
     }
 }
 
-
-
-
-
-
-
-
-
 main {}
+
+.image {}
+
 section {}
 
-.about {}
+.about {
+    display: none;
+}
 
 .work {
+    display: none;
     /* border: 1px solid pink; */
 }
 .projects-container{
